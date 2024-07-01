@@ -50,7 +50,7 @@
       </div>
       <!-- logo -->
       <div class="logo">
-        <h1>KABALOGLU ALTIN</h1>
+        <h1>TOPTAN ALTIN</h1>
       </div>
     </div>
 
@@ -82,37 +82,45 @@
           </div>
 
       <div class="body-orta">
-          <div class="siparis-divi">
-            <div class="siparis-container">
-              <h2>PROFİL</h2>
-              <table>
-                <thead>
-                  <tr>
-                    <th>Adı</th>
-                    <th>Soyadı</th>
-                    <th>Mail</th>
-                    <th>Tel</th>
-                    <th>İşletme Adı</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Mehmet</td>
-                    <td>Yılmaz</td>
-                    <td>Mehmet.yılmaz(@).com</td>
-                    <td>05340882445</td>
-                    <td>
-                      <a href="" class="approve-btn">Güncelle</a>
-                    </td>
-                  </tr>
-              
-                  <!-- Diğer siparişler buraya eklenebilir -->
-                </tbody>
-              </table>
+        <div class="urun-guncelleme-panel">
+          <div class="container">
+            <div class="input-container">
+            <label for="product1">Ünvan:</label>
+            
+            <input type="text" id="product1" placeholder="">
+            
+            <label for="product1">Adres:</label>
+            <input type="text" id="product2" placeholder="">
+            <label for="product1">Vergi-No:</label>
+            <input type="text" id="product3" placeholder="">
+            <label for="product1">E-Posta:</label>
+            <input type="text" id="product3" placeholder="">
+            <label for="product1">TEL:</label>
+            <input type="text" id="product4" placeholder="">
+            <button onclick="updateProducts()">Güncelle</button>
+            
             </div>
+            <div>
+           
+              <div class="urun-foto"  style="
+                margin-left: 100px;">
+                <a>
+                  <img src="favicon.png" >
+                  
+                </a>
+                <label for="product1">LOGO:</label>
+                <input
+                type="file"
+                id="product-image"
+                name="product-image"
+                required
+              />
+              </div>
+            </div> 
           </div>
-          </body>
-        </html>
+          
+        </div>
+         
       </div>
 
       <div class="body-sag"></div>
