@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin | Siparişler</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 10;
+        background-image: url(foto.jpg);
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+      .header {
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+        border-width: 5px solid black;
+        border-color: black;
+      }
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .content p {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+      }
+      @media (min-width: 768px) {
+                .content p {
+                    flex: 0 0 48%;
+                }
+            }
+    </style>
+  </head>
+  <body>
+    <!-- //////   Üst Menü \\\\\\-->
+
+    <div class="ustmenu">
+      <!-- arama kutusu -->
+      <div class="box">
+        <input class="search" placeholder=" " spellcheck="false" />
+      </div>
+      <!-- logo -->
+      <div class="logo">
+        <h1>TOPTAN ALTIN</h1>
+      </div>
+    </div>
+
+    <!--///////////// BODY \\\\\\\\\\\\\\ -->
+
+    <div class="body-behind">
+        <div class="body-sol">
+            <ul>
+              <div class="kullanici-profil-logo">
+                <a href="index.html">
+                  <img src="favicon.png" alt="" />
+                </a>
+              </div>
+              <p
+                style="
+                  color: white;
+                  text-align: center;
+                  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                    serif;
+                "
+              >
+                KABALOĞLU LTD. ŞTİ.
+              </p>
+              <a class="btn-1" href="musteri-profil.html">Profil</a>
+              <a class="btn-2" href="sepetim.html">Sepetim</a>
+              <a class="btn-3" href="siparislerim.html">Siparişlerim</a>
+              <a class="btn-4" href="admin-login.html">ADMİN</a>
+            </ul>
+          </div>
+
+      <div class="body-orta">
+          <div class="siparis-divi">
+            <div class="siparis-container">
+              <h2>Sipariş Listesi</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Sipariş ID</th>
+                    <th>Ürün Adı</th>
+                    <th>Miktar</th>
+                    <th>Toplam Fiyat</th>
+                    <th>İşlemler</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Ürün 1</td>
+                    <td>2</td>
+                    <td>50 TL</td>
+                    <td>
+                      <a href="siparis-detay.html" class="approve-btn">Görümtüle</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Ürün 2</td>
+                    <td>1</td>
+                    <td>30 TL</td>
+                    <td>
+                      <a href="siparis-detay.html" class="approve-btn">Görümtüle</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Ürün 1</td>
+                    <td>2</td>
+                    <td>50 TL</td>
+                    <td>
+                      <a href="siparis-detay.html" class="approve-btn">Görümtüle</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Ürün 1</td>
+                    <td>2</td>
+                    <td>50 TL</td>
+                    <td>
+                      <a href="siparis-detay.html" class="approve-btn">Görümtüle</a>
+                    </td>
+                  </tr>
+                  <!-- Diğer siparişler buraya eklenebilir -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+          </body>
+        </html>
+      </div>
+
+      <div class="body-sag"></div>
+    </div>
+  </body>
+  <footer></footer>
+</html>

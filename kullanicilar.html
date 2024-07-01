@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin | Kullanıcı</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 10;
+        background-image: url(foto.jpg);
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+      .header {
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+        border-width: 5px solid black;
+        border-color: black;
+      }
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .content p {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+      }
+      @media (min-width: 768px) {
+        .content p {
+          flex: 0 0 48%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- //////   Üst Menü \\\\\\-->
+
+    <div class="ustmenu">
+      <!-- arama kutusu -->
+      <div class="box">
+        <input class="search" placeholder=" " spellcheck="false" />
+      </div>
+      <!-- logo -->
+      <div class="logo">
+        <h1>TOPTAN ALTIN</h1>
+      </div>
+      <!-- profil butonu -->
+    </div>
+
+    <!--///////////// BODY \\\\\\\\\\\\\\ -->
+
+    <div class="body-behind">
+      <div class="body-sol">
+        <ul>
+          <a class="button6" href="admin.html">Ana Sayfa</a>
+          <a class="button1" href="kullanicilar.html">Kullanıcılar</a>
+          <a class="button2" href="urunler.html">Ürünler</a>
+          <a class="button3" href="irsaliye.html">İRSALİYE</a>
+          <a class="button4" href="siparisler.html">Siparişler</a>
+          <a class="btn-4" href="index.html">MÜŞTERİ MAĞAZA</a>
+        </ul>
+      </div>
+
+      <div class="body-orta">
+        <div class="kullanici-buton"></div>
+        <div class="tablo">
+          <div class="tablo-menu">
+            <button class="user-add-button">Yeni Ekle</button>
+
+            <form>
+              <input type="searchkullanıcı" placeholder="Arama" />
+              <button type="submit">Ara</button>
+            </form>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>ŞİRKET ÜNVANI</th>
+                <th>KİŞİ ADI</th>
+                <th>KİŞİ SOYADI</th>
+                <th>TEL NO</th>
+                <th>MAİL</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GRAM ALTIN</td>
+                <td>MEHMET</td>
+                <td>YILMAZ</td>
+                <td>0534545232</td>
+                <td>MEHMETYILMAZGMAİL.COM</td>
+
+                <td><button>Sil</button></td>
+                <td><button>Güncelle</button></td>
+              </tr>
+              <tr>
+                <td>KÜLÇE ALTIN</td>
+                <td>BURAK</td>
+                <td>SONAR</td>
+                <td>0546546565</td>
+                <td>BURAKSONARGMAİL.COM</td>
+
+                <td><button>Sil</button></td>
+                <td><button>Güncelle</button></td>
+              </tr>
+              <tr>
+                <td>HAREM ALTIN</td>
+                <td>SEMİH</td>
+                <td>OVAYURT</td>
+                <td>0534055872</td>
+                <td>SEMİH.OVAYURT.32GMAİL.COM</td>
+
+                <td><button>Sil</button></td>
+                <td><button>Güncelle</button></td>
+              </tr>
+              <tr>
+                <td>GRAM ALTIN</td>
+                <td>MEHMET</td>
+                <td>YILMAZ</td>
+                <td>0534545232</td>
+                <td>MEHMETYILMAZGMAİL.COM</td>
+
+                <td><button>Sil</button></td>
+                <td><button>Güncelle</button></td>
+              </tr>
+              <tr>
+                <td>KÜLÇE ALTIN</td>
+                <td>BURAK</td>
+                <td>SONAR</td>
+                <td>0546546565</td>
+                <td>BURAKSONARGMAİL.COM</td>
+
+                <td><button>Sil</button></td>
+                <td><button>Güncelle</button></td>
+              </tr>
+              <tr></tr>
+
+              <tr></tr>
+            </tbody>
+          </table>
+          <script>
+            function guncelle(urun) {
+              var yeniStok = document.getElementById(urun + "Input").value;
+              document.getElementById(urun + "Stok").textContent = yeniStok;
+              document.getElementById(urun + "Input").value = "";
+            }
+
+            function sil(urun) {
+              var satir = document.getElementById(urun + "Satir");
+              satir.parentNode.removeChild(satir);
+            }
+          </script>
+        </div>
+      </div>
+
+      <div class="body-sag"></div>
+    </div>
+  </body>
+  <footer></footer>
+</html>

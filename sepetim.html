@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin | Kullanıcı</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 10;
+        background-image: url(foto.jpg);
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+      .header {
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+        border-width: 5px solid black;
+        border-color: black;
+      }
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .content p {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+      }
+      @media (min-width: 768px) {
+        .content p {
+          flex: 0 0 48%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- //////   Üst Menü \\\\\\-->
+
+    <div class="ustmenu">
+      <!-- arama kutusu -->
+      <div class="box">
+        <input class="search" placeholder=" " spellcheck="false" />
+      </div>
+      <!-- logo -->
+      <div class="logo">
+        <h1>TOPTAN ALTIN</h1>
+      </div>
+      <!-- profil butonu -->
+    </div>
+
+    <!--///////////// BODY \\\\\\\\\\\\\\ -->
+
+    <div class="body-behind">
+      <div class="body-sol">
+        <ul>
+          <div class="kullanici-profil-logo">
+            <a href="ana-sayfa.html">
+              <img src="favicon.png" alt="" />
+            </a>
+          </div>
+          <p
+            style="
+              color: white;
+              text-align: center;
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                serif;
+            "
+          >
+            KABALOĞLU LTD. ŞTİ.
+          </p>
+          <a class="btn-1" href="musteri-profil.html">Profil</a>
+          <a class="btn-2" href="sepetim.html">Sepetim</a>
+          <a class="btn-3" href="siparislerim.html">Siparişlerim</a>
+          <a class="btn-4" href="admin-login.html">ADMİN</a>
+        </ul>
+      </div>
+
+      <div class="body-orta">
+        <div class="kullanici-buton"></div>
+        <div class="tablo">
+          <table>
+            <thead>
+              <tr>
+                <th>ŞİRKET ÜNVANI</th>
+                <th>KİŞİ ADI</th>
+                <th>KİŞİ SOYADI</th>
+                <th>TEL NO</th>
+                <th>MAİL</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GRAM ALTIN</td>
+                <td>MEHMET</td>
+                <td>YILMAZ</td>
+                <td>0534545232</td>
+                <td>MEHMETYILMAZGMAİL.COM</td>
+
+                <td><button>Sil</button></td>
+              </tr>
+              <tr>
+                <td>KÜLÇE ALTIN</td>
+                <td>BURAK</td>
+                <td>SONAR</td>
+                <td>0546546565</td>
+                <td>BURAKSONARGMAİL.COM</td>
+
+                <td><button>Sil</button></td>
+              </tr>
+              <tr>
+                <td>HAREM ALTIN</td>
+                <td>SEMİH</td>
+                <td>OVAYURT</td>
+                <td>0534055872</td>
+                <td>SEMİH.OVAYURT.32GMAİL.COM</td>
+
+                <td><button>Sil</button></td>
+              </tr>
+              <tr>
+                <td>GRAM ALTIN</td>
+                <td>MEHMET</td>
+                <td>YILMAZ</td>
+                <td>0534545232</td>
+                <td>MEHMETYILMAZGMAİL.COM</td>
+
+                <td><button>Sil</button></td>
+              </tr>
+              <tr>
+                <td>KÜLÇE ALTIN</td>
+                <td>BURAK</td>
+                <td>SONAR</td>
+                <td>0546546565</td>
+                <td>BURAKSONARGMAİL.COM</td>
+
+                <td><button>Sil</button></td>
+              </tr>
+              <tr></tr>
+
+              <tr></tr>
+            </tbody>
+          </table>
+          <script>
+            function guncelle(urun) {
+              var yeniStok = document.getElementById(urun + "Input").value;
+              document.getElementById(urun + "Stok").textContent = yeniStok;
+              document.getElementById(urun + "Input").value = "";
+            }
+
+            function sil(urun) {
+              var satir = document.getElementById(urun + "Satir");
+              satir.parentNode.removeChild(satir);
+            }
+          </script>
+        </div>
+        <div class="tablo-menu" style="display: flex">
+          <a href="" style="margin: 10px">
+            <button class="user-add-button">İptal Et</button>
+          </a>
+          <a href="" style="margin: 10px">
+            <button class="user-add-button">Onayla</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="body-sag"></div>
+    </div>
+  </body>
+  <footer></footer>
+</html>

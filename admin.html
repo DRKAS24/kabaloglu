@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin | Ana Sayfa</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      .body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 10;
+        background-image: url(foto.jpg);
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+      .header {
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+        border-width: 5px solid black;
+        border-color: black;
+      }
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .content p {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+      }
+      /*@media (min-width: 768px) {
+            .content p {
+                flex: 0 0 48%;
+            }
+        }*/
+    </style>
+  </head>
+
+  <body>
+    <!-- //////   Üst Menü \\\\\\-->
+
+    <div class="ustmenu">
+      <!-- arama kutusu -->
+      <div class="box">
+        <input class="search" placeholder=" " spellcheck="true" />
+      </div>
+      <!-- logo -->
+      <div class="logo">
+        <h1>TOPTAN ALTIN</h1>
+      </div>
+      <div></div>
+      <!-- profil butonu -->
+    </div>
+
+    <!--///////////// BODY \\\\\\\\\\\\\\ -->
+
+    <div class="body-behind">
+      <div class="body-sol">
+        <ul>
+          <a class="button6" href="admin.html">Ana Sayfa</a>
+          <a class="button1" href="kullanicilar.html">Kullanıcılar</a>
+          <a class="button2" href="urunler.html">Ürünler</a>
+          <a class="button3" href="irsaliye.html">İRSALİYE</a>
+          <a class="button4" href="siparisler.html">Siparişler</a>
+          <a class="btn-4" href="index.html">MÜŞTERİ MAĞAZA</a>
+        </ul>
+      </div>
+
+      <div class="body-orta">
+        <div class="yonetim-panel">
+          <div class="siparis-bekleyen-buton">
+            <h1>15</h1>
+            <h5>Bekleyen Siparişler</h5>
+          </div>
+          <div class="stok-biten-buton">
+            <h1>5</h1>
+            <h5>Stoğu Azalan Ürünler</h5>
+          </div>
+
+          <div class="yeni-kullanıcı-basvuru">
+            <h1>2</h1>
+            <h5>Yeni Üye Başvuruları</h5>
+          </div>
+
+          <div class="like">
+            <h1>2</h1>
+            <h5>Stoğu Biten Ürünler</h5>
+          </div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="body-sag">
+        <p>SEMİH</p>
+      </div>
+    </div>
+  </body>
+  <footer></footer>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGİN</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 10;
+        background-image: url(foto.jpg);
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+      .header {
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+        border-width: 5px solid black;
+        border-color: black;
+      }
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .content p {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+      }
+      @media (min-width: 768px) {
+        .content p {
+          flex: 0 0 48%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logşn-ustmenu"></div>
+    <div class="login-body-behind">
+      <div class="login-body-sol"></div>
+      <div class="login-body-orta">
+        <div class="login-behind">
+          <div class="login-card">
+            <div class="login-container">
+              <form class="login-form">
+                <h2>Giriş Yap</h2>
+                <div class="input-group">
+                  <label for="username">Kullanıcı Adı:</label>
+                  <input type="text" id="username" name="username" required />
+                </div>
+                <div class="input-group">
+                  <label for="password">Şifre:</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                  />
+                </div>
+                <div class="giris-btn-divi" style="display: flex">
+                  <button
+                    type="submit"
+                    style="
+                      background-color: white;
+                      width: 100px;
+                      display: flex;
+                      align-items: center;
+                      margin-left: auto;
+                      margin-right: auto;
+                      border: 1px solid black;
+                    "
+                  >
+                    Giriş
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="body-sag"></div>
+    </div>
+  </body>
+</html>

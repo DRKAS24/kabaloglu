@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin | İRSALİYE</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 10;
+                background-image: url(foto.jpg);
+            }
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 15px;
+                
+            }
+            .header {
+                background-color: #f1f1f1;
+                padding: 20px;
+                text-align: center;
+                border-width: 5px solid black;
+                border-color: black;
+            }
+            .content {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .content p {
+                flex: 0 0 100%;
+                margin-bottom: 20px;
+            }
+            /*@media (min-width: 768px) {
+                .content p {
+                    flex: 0 0 48%;
+                }
+            }*/
+        </style>
+      
+    </head>
+    <body>
+    
+        <!-- //////   Üst Menü \\\\\\-->
+        
+        <div class="ustmenu" >
+            <!-- arama kutusu -->
+            <div class="box">
+                <input class="search" 
+                placeholder=" "
+                spellcheck="false"
+                >
+            </div>
+            <!-- logo -->
+            <div class="logo">
+                <h1>TOPTAN ALTIN</h1>
+            </div>
+            
+           
+        </div>
+    
+    
+        
+    
+    
+        <!--///////////// BODY \\\\\\\\\\\\\\ -->
+    
+        <div class="body-behind">
+
+
+            
+        <div class="body-sol">
+                <ul>
+                    <a class="button6" href="admin.html">Ana Sayfa</a>
+                    <a class="button1" href="kullanicilar.html">Kullanıcılar</a>
+                    <a class="button2" href="urunler.html">Ürünler</a>
+                    <a class="button3" href="irsaliye.html">İRSALİYE</a>
+                    <a class="button4" href="siparisler.html">Siparişler</a>
+                    <a class="btn-4" href="index.html">MÜŞTERİ MAĞAZA</a>
+                </ul>
+        </div>
+  
+        <div class="body-orta">
+            
+            <div class="irsaliye-divi">
+                <div class="irsaliye-üst">
+                    <div class="musteri-bilgi">
+                        <p>Kabaloğlu Kuyumculuk
+                            Adres: Yenibosna Merkez, Kuyumcular sk Vizyonpark Atölyeler Bloğu
+                            C2 Blok 3.Kat No:305,
+                            34197 Küçükçekmece/İstanbul
+                            Tel: 0531 597 89 48</p>
+                    </div>
+                    <div class="maliye-logo"></div>
+                    <div class="toptanci-bilgi-divi">
+                    <div class="toptanci-bilgi"></div>
+                    <div class="toptanci-bilgi2"></div>
+                    </div>
+                </div>
+
+
+                <div class="irsaliye-orta">
+                    <div class="irsaliye-tablo">
+                        <table name="siparis-irsaliyesi">
+                            <thead>
+                                <tr>
+                                    <th>Ürün Kodu</th>
+                                    <th>Ürün Adı</th>
+                                    <th>Miktarı</th>
+                                    <th>Tutar</th>
+                                    <th>Sil</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>001</td>
+                                    <td>Bilgisayar</td>
+                                    <td>2</td>
+                                    <td>4000 TL</td>
+                                    <td>
+                                        <button class="cancel-btn">X</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>002</td>
+                                    <td>Yazıcı</td>
+                                    <td>1</td>
+                                    <td>1200 TL</td>
+                                    <td>
+                                        <button class="cancel-btn">X</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>003</td>
+                                    <td>Mouse</td>
+                                    <td>3</td>
+                                    <td>300 TL</td>
+                                    <td>
+                                        <button class="cancel-btn">X</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+                <div class="irsaliye-alt">
+                    <div class="irsaliye-toplam">
+                        <h4>TOPLAM =</h4>
+                    </div>
+                    <a href="irsaliye-yazdır.html">
+                    <button class="irsaliye-button" >Yazdır</button>
+                </a>
+                </div>
+            </div>
+                
+        </div>
+        
+        <div class="body-sag">
+        </div>
+</body>
+<footer></footer>
+</html>   
+        
+        
+
+       
+
+ 
+
